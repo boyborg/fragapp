@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/1_json" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RestwithRetrofit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example_sync" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jsonvolley" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mapstest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mudikmasihlama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/recycler__view" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/volley,yolandi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/volley_json" vcs="Git" />
+  </component>
+</project>
