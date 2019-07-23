@@ -2,4 +2,8 @@
     <string name="app_name">fragmasjid</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">close navigation drawer</string>
+    <string name="profile_frag">Profile Fragment</string>
+    <string name="schedule_frag">Schedule Fragment</string>
+    <string name="donate_frag">Donasi Fragment</string>
+    <string name="event_frag">Event Fragment</string>
 </resources>
