@@ -7,16 +7,28 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
+    private RecyclerView recyclerView;
+    private RecyclerView.LayoutManager layoutManager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       recyclerView=(RecyclerView)findViewById(R.id.rc_view);
+
+       recyclerView.setHasFixedSize(true);
+        layoutManager=new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+
 
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_id);
         setSupportActionBar(toolbar);
@@ -32,14 +44,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if(savedInstanceState==null){
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout_id,
-                new ProfileFrag()).commit();
-        navigationView.setCheckedItem(R.id.nav_profile);}
+                new HomeFrag()).commit();
+        navigationView.setCheckedItem(R.id.nav_home);}
 
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
+            case R.id.nav_home:
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout_id,
+                        new HomeFrag()).commit();
+                break;
             case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout_id,
                         new ProfileFrag()).commit();

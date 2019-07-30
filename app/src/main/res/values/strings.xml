@@ -6,4 +6,9 @@
     <string name="schedule_frag">Schedule Fragment</string>
     <string name="donate_frag">Donasi Fragment</string>
     <string name="event_frag">Event Fragment</string>
+    <string name="Profile_s">Aktivitas</string>
+    <string name="seputarfmmb">Seputar FMMB</string>
+    <string name="donate_s">Donasi</string>
+    <string name="others">Lainnya</string>
+    <string name="home_nav">Home</string>
 </resources>
